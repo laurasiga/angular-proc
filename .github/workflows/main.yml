@@ -35,7 +35,7 @@ jobs:
       - name: build app bundle
         run: npm run build:prod
       - name: rename index for routing
-        run: mv dist/angular-poc/index.html dist/angular-poc/404.html
+        run: mv dist/angular-poc/browser/index.html dist/angular-poc/browser/404.html
       - name: deploy to pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
